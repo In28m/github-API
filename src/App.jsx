@@ -45,7 +45,16 @@ const App = () => {
       }}
     >
       {loading ? (
-        <div className="loader"></div>
+        <div
+        className="loader"
+        style={{
+          background: 'linear-gradient(to right, #f7ff00, #db36a4)',
+          animation: 'spin 1s linear infinite',
+          borderColor: '#f7ff00',
+          borderTopColor: '#db36a4'
+        }}
+      ></div>
+      
       ) : (
         <div
           className="card"
@@ -60,6 +69,8 @@ const App = () => {
             textAlign: "center",
             zIndex: "1",
             width: "20%",
+            borderColor: "#f7ff00",
+            borderTopColor: "#db36a4",
           }}
         >
           <img
